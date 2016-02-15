@@ -8,7 +8,7 @@ namespace Telefonbuch.Models
     public class PhoneNumberModels
     {
         public string PhoneNumber { get; set; }
-        public PhoneNumberCategoryModels Category{ get; set; }
+        public CategoryModel Category{ get; set; }
 
     }
 }
