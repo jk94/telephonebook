@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
 namespace Telefonbuch.Models
 {
-    public class PhoneNumberModel
+    public class UserContext : DbContext
     {
-        public string PhoneNumber { get; set; }
-        public CategoryModel Category{ get; set; }
 
+        public DbSet<UserModel> UserModels { get; set; }
     }
 }

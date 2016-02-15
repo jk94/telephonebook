@@ -8,16 +8,21 @@ namespace Telefonbuch.Models
     public class TelephoneBookModel
     {
         public List<ContactModel> Contacts { get; set; }
+
+        public TelephoneBookModel()
+        {
+            this.Contacts = new List<ContactModel>();
+        }
         
         // TODO
-        public void addContact(ContractModel contact)
+        public void addContact(ContactModel contact)
         {
-            this.Contacts.add(contact);
+            this.Contacts.Add(contact);
         }
 
-        public ContactModel Contacts(int index)
+        public ContactModel getContact(int index)
         {
-            this.Contacts.get(index);
+            return this.Contacts.ElementAtOrDefault(index);
         }
     }
 }
