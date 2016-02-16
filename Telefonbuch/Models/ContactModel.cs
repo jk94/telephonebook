@@ -23,7 +23,7 @@ namespace Telefonbuch.Models
             this.FirstName = "";
             this.MiddleName = "";
             this.WebSite = "";
-            this.Birthday = new DateTime();
+            this.Birthday = DateTime.Now;
             this.PhoneNumbers = new List<PhoneNumberModel>();
             this.Emails = new List<EmailModel>();
             this.AddressList = new List<AddressModel>();
